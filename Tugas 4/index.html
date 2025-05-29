@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NCT DREAM - THE DREAM SHOW 3</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+<!--Navbar-->
+<nav class="bg-gray-700 text-white px-6 py-4 shadow-md sticky top-0 z-50">
+  <div class="container mx-auto flex justify-between items-center">
+    <!-- Logo -->
+    <div class="text-xl font-bold">NCT DREAM</div>
+
+    <!-- Menu for Large Screens -->
+    <ul class="hidden md:flex space-x-8 text-sm font-medium">
+      <li><a href="#home" class="hover:text-gray-300">Home</a></li>
+      <li><a href="#music" class="hover:text-gray-300">Music</a></li>
+      <li><a href="#artis" class="hover:text-gray-300">Artist</a></li>
+      <li><a href="#schedule" class="hover:text-gray-300">Schedule</a></li>
+      <li>
+        <a href="#" class="bg-black text-white px-3 py-1 rounded hover:bg-white hover:text-black">Sign in</a>
+      </li>
+    </ul>
+
+    <!-- Hamburger Icon -->
+    <div class="md:hidden">
+      <button id="menu-toggle" class="focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="md:hidden hidden px-6 pb-4">
+    <ul class="space-y-3 text-sm font-medium">
+      <li><a href="#home" class="block hover:text-gray-300">Home</a></li>
+      <li><a href="#music" class="block hover:text-gray-300">Music</a></li>
+      <li><a href="#artis" class="block hover:text-gray-300">Artist</a></li>
+      <li><a href="#schedule" class="block hover:text-gray-300">Schedule</a></li>
+      <li>
+        <a href="#" class="inline-block bg-black text-white px-3 py-1 rounded hover:bg-white hover:text-black">Sign in</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+
+
+<!-- Header -->
+  <section class="bg-gray-900 text-white text-center py-20">
+  <!-- Judul -->
+  <h1 id="home" class="text-5xl font-bold mb-4">THE DREAM SHOW 3</h1>
+  
+  <!-- Subjudul -->
+  <h2 class="text-4xl font-semibold text-green-300 mb-6">DREAM ( ) SCAPE</h2>
+
+  <!-- Deskripsi -->
+  <p class="max-w-4xl mx-auto text-lg mb-12 leading-relaxed">
+    The biggest, extraordinary and spread out K-pop music festival all over the world in
+    cooperation with the famous K-pop theater agencies in Korea and other outstanding talents.
+  </p>
+
+  <!-- Gambar Anggota -->
+  <div class="flex justify-center">
+    <img src="img/scape.jpg" alt="NCT Dream Members" class="w-[900px] h-auto mb-20">
+  </div>
+</section>
+
+
+
+<!--Musik-->
+<section id="music" class="bg-gradient-to-b from-green-900 to-gray-900 text-white py-12">
+  <div class="text-center mb-8">
+    <h2 class="text-3xl font-bold">Album NCT DREAM – DREAMSCAPE</h2>
+    <p class="text-gray-300">Listen to the latest album from NCT DREAM right here!</p>
+  </div>
+
+  <div class="max-w-3xl mx-auto p-4 bg-black rounded-xl shadow-lg">
+    <iframe style="border-radius:12px"
+      src="https://open.spotify.com/embed/album/4CbiijbtjdFusL6uXiZJ2k?utm_source=generator"
+      width="100%"
+      height="380"
+      frameBorder="0"
+      allowfullscreen=""
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      loading="lazy">
+    </iframe>
+  </div>
+</section>
+
+<!-- JS for Toggle -->
+<script>
+  const toggleBtn = document.getElementById("menu-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  toggleBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>
+
+
+
+
+  <!-- Our Members -->
+  <section id="artis" class="bg-gray-900 py-12 text-white text-center">
+  <h3 class="text-3xl font-bold mb-10">OUR MEMBER</h3>
+
+  <div class="grid grid-cols-4 gap-6 justify-items-center px-6">
+    <!-- Baris 1 (4 member) -->
+    <div>
+      <img src="img/mark.jpg" alt="Mark" class="rounded-lg w-40 h-56 object-cover mb-2">
+      <p>Mark</p>
+    </div>
+    <div>
+      <img src="img/renjun.jpg" alt="Renjun" class="rounded-lg w-40 h-56 object-cover mb-2">
+      <p>Renjun</p>
+    </div>
+    <div>
+      <img src="img/jeno.jpg" alt="Jeno" class="rounded-lg w-40 h-56 object-cover mb-2">
+      <p>Jeno</p>
+    </div>
+    <div>
+      <img src="img/haechan.jpg" alt="Haechan" class="rounded-lg w-40 h-56 object-cover mb-2">
+      <p>Haechan</p>
+    </div>
+
+    <!-- Baris 2 (4 member) -->
+    <div>
+      <img src="img/jaemin.jpg" alt="Jaemin" class="rounded-lg w-40 h-56 object-cover mb-2">
+      <p>Jaemin</p>
+    </div>
+    <div>
+      <img src="img/jisung.jpg" alt="Jisung" class="rounded-lg w-40 h-56 object-cover mb-2">
+      <p>Jisung</p>
+    </div>
+    <div>
+      <img src="img/chenle.jpg" alt="Chenle" class="rounded-lg w-40 h-56 object-cover mb-2">
+      <p>Chenle</p>
+    </div>
+    <div>
+      <img src="img/jaehyun.jpg" alt="Jaehyun" class="rounded-lg w-40 h-56 object-cover mb-2">
+      <p>Jaehyun</p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Schedule -->
+  <section id="schedule" class="relative bg-cover bg-center bg-no-repeat py-20" style="background-image: url('img/nct.jpg');">
+    <div class="bg-grey  bg-black-80 max-w-5xl mx-auto p-8 rounded-lg shadow-lg">
+      <h2 class="text-3xl font-bold text-center mb-8">OUR SCHEDULE</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-center font-semibold">
+        <div>
+          <p class="text-lg">SEOUL</p>
+          <p>May 03–04, 2024</p>
+        </div>
+        <div>
+          <p class="text-lg">OSAKA</p>
+          <p>May 11–12, 2024</p>
+        </div>
+        <div>
+          <p class="text-lg">JAKARTA</p>
+          <p>May 18, 2024</p>
+        </div>
+        <div>
+          <p class="text-lg">TOKYO</p>
+          <p>May 25–26, 2024</p>
+        </div>
+        <div>
+          <p class="text-lg">NAGOYA</p>
+          <p>June 02, 2024</p>
+        </div>
+        <div>
+          <p class="text-lg">HONG KONG</p>
+          <p>June 15–16, 2024</p>
+        </div>
+        <div>
+          <p class="text-lg">BANGKOK</p>
+          <p>June 22–23, 2024</p>
+        </div>
+        <div>
+          <p class="text-lg">SINGAPORE</p>
+          <p>June 29–30, 2024</p>
+        </div>
+        <div>
+          <p class="text-lg">MANILA</p>
+          <p>August 10–11, 2025</p>
+        </div>
+        <div>
+          <p class="text-lg">LATAM</p>
+          <p>August–September, 2024</p>
+        </div>
+        <div>
+          <p class="text-lg">US</p>
+          <p>September 2024</p>
+        </div>
+        <div>
+          <p class="text-lg">EUROPA</p>
+          <p>October–November, 2024</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Footer -->
+  <footer class="bg-black text-gray-300 py-10 px-6 mt-10">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="font-semibold">NCT DREAM</h3>
+        <p class="text-sm mt-2">The biggest, extraordinary and spread out K-pop music festival all over the world</p>
+      </div>
+      <div>
+        <h3 class="font-semibold">Sign in for the latest news</h3>
+        <form class="mt-2">
+          <input type="email" placeholder="Your email address" class="bg-gray-700 text-white p-2 w-full mb-2">
+          <button type="submit" class="bg-white text-black px-4 py-1 rounded">Submit</button>
+        </form>
+      </div>
+      <div class="flex justify-between">
+        <div>
+          <h3 class="font-semibold">Menu</h3>
+          <ul class="text-sm mt-2 space-y-1 cursor-pointer">
+            <li><a href="#home" class="hover:text-gray-300">Home</a></li>
+            <li><a href="#artis" class="hover:text-gray-300">Artist</a></li>
+            <li><a href="#schedule" class="hover:text-gray-300">Schedule</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold">Help</h3>
+          <ul class="text-sm mt-2 space-y-1">
+            <li>Privacy and Policy</li>
+            <li>Terms of Use</li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+    <hr>
+    <p class="text-center mt-6 text-xs">&copy; 2025 @liyida</p>
+  </hr>
+  </footer>
+
+</body>
+</html>
